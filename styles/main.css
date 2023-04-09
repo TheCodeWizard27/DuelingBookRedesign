@@ -1,0 +1,109 @@
+
+* {
+    font-family: 'Ubuntu', sans-serif !important;
+}
+
+:root {
+
+    --accent-color: darkcyan;
+
+    --mute-url: "https://images.duelingbook.com/svg/mute_btn_up.svg";
+    --unmute-url: "https://images.duelingbook.com/svg/cross.svg";
+}
+
+/* Hide screenshot btn */
+#screenshot_btn {
+    display: none;
+}
+
+/* input {
+    opacity: unset !important;
+}
+input[type="text"], input[type="password"] {
+    border: unset !important;
+    border-bottom: 1px solid gray !important;
+    height: 18px !important;
+    width: 128px !important;
+}
+input:focus {
+    outline: none;
+    box-shadow: 0 0 1px 1px rgb(0,0,0,0.1);
+} */
+div .checkbox {
+    display: none !important;
+}
+
+/* TODO improve icons*/ 
+/* img[src="https://images.duelingbook.com/svg/mute_btn_up.svg"], img[src="https://images.duelingbook.com/svg/mute_btn_up-over.svg"] {
+    width: 0;
+    padding: 124px;
+    background: var(--mute-url);
+}
+img[src="https://images.duelingbook.com/svg/cross.svg"] {
+    width: 0;
+    padding: 124px;
+    background: var(--unmute-url);
+} */
+
+/*#region Main Page*/
+
+#front-page-bg {
+    position: absolute;
+    background-color: white;
+    width: calc(100vw + 500px);
+    height: 254px;
+    margin-top: 390px;
+    margin-left: -500px;
+}
+
+#welcome_btn, #forum_btn, #rules_btn {
+    color: white !important;
+    border-left: 2px solid white !important;
+}
+#welcome_btn:hover, #forum_btn:hover, #rules_btn:hover  {
+    color: black !important;
+    background-color: white !important;
+    border-left: unset !important;
+}
+
+#bulletin_txt {
+    background-color: unset;
+    border: unset;
+    border-left: 1px solit gray !important;
+}
+
+#login .background, #register .background, #logged_in .background, #forgot_password .background {
+    display:none !important;
+}
+
+.register_btn, 
+.forgot_password_btn, 
+.logout_btn, 
+.switch_account_btn {
+    text-decoration: none !important;
+    text-transform: uppercase !important;
+    border: 1px solid black !important;
+    border-radius: 4px !important;
+    padding: 4px !important;
+    color: black !important;
+    text-align: center;
+}
+.forgot_password_btn {
+    width: 184px;
+}
+
+.register_btn:hover, 
+.forgot_password_btn:hover, 
+.logout_btn:hover, 
+.switch_account_btn:hover {
+    color: white !important;
+    background-color: black !important;
+}
+
+.button .proxy .unselectable {
+    background: unset !important;
+    border: 1px solid var(--accent-color) !important;
+    color: var(-accent-color) !important;
+}
+
+/* #endregion */

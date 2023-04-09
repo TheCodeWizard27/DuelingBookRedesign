@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "DuelingBookRedesign",
+    "version": "1.0",
+    "description": "Improves the look and feel of DuelingBook",
+    "content_scripts": [
+        {
+            "css": ["styles/main.css"],
+            "js": ["scripts/main.js"],
+            "matches": ["https://www.duelingbook.com/*"]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+          "resources": [ "assets/*" ],
+          "matches": ["https://www.duelingbook.com/*"]
+        }
+    ]
+}
